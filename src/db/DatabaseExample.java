@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class DatabaseExample {
 	public static void main(String[] args) {
 		// sostituisci con l'URL del tuo database
-		String url = "jdbc:sqlite:database.db";
+		String url = "jdbc:postgresql://127.0.0.1:5432/database.db";
 
 		try (Connection conn = DriverManager.getConnection(url); Statement stmt = conn.createStatement()) {
 
